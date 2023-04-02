@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.project4.CoffeeAppController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4.CoffeeAppController">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="38.0" prefWidth="122.0" text="Coffee">
+         <font>
+            <Font name="18thCentury" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="74.0" prefHeight="21.0" prefWidth="53.0" text="Size">
+         <font>
+            <Font name="18thCentury" size="21.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="coffeeSize" layoutX="108.0" layoutY="74.0" mnemonicParsing="false" onAction="#selectedCoffeeSize" text="Select one">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font name="18thCentury" size="13.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="25.0" layoutY="121.0" text="Add-Ins">
+         <font>
+            <Font name="18thCentury" size="21.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="108.0" layoutY="123.0" mnemonicParsing="false" text="Sweet Cream">
+         <font>
+            <Font name="18thCentury" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="194.0" layoutY="123.0" mnemonicParsing="false" text="French Vanilla">
+         <font>
+            <Font name="18thCentury" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="284.0" layoutY="123.0" mnemonicParsing="false" text="Irish Cream">
+         <font>
+            <Font name="18thCentury" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="366.0" layoutY="123.0" mnemonicParsing="false" text="Caramel">
+         <font>
+            <Font name="18thCentury" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="444.0" layoutY="123.0" mnemonicParsing="false" text="Mocha">
+         <font>
+            <Font name="18thCentury" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="26.0" layoutY="168.0" text="Quantity">
+         <font>
+            <Font name="18thCentury" size="21.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="108.0" layoutY="167.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="1">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font name="18thCentury" size="13.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="25.0" layoutY="262.0" mnemonicParsing="false" text="Add to Basket">
+         <font>
+            <Font name="18thCentury" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="191.0" layoutY="261.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" text="Clear">
+         <font>
+            <Font name="18thCentury" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="366.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Exit">
+         <font>
+            <Font name="18thCentury" size="14.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
