@@ -1,5 +1,13 @@
 package rucafe;
 
 public abstract class MenuItem {
-    public abstract double itemPrice();
+    private double price;
+
+    public MenuItem(double price) {
+        this.price = price;
+    }
+
+    public abstract double itemPrice() {
+        return this.price;
+    }
 }
